@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780578163309",
+    "project_id": "gopath-9bc63",
+    "storage_bucket": "gopath-9bc63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780578163309:android:5c3d68ac1e1e5ede620d64",
+        "android_client_info": {
+          "package_name": "com.example.gopath"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMePfqMZnW7Hu3P1HOfX6bYvJ2uvwYM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
