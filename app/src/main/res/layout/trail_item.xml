@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/trail_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/trail_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="4.7/5 ⭐"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trail_image" />
+
+        <TextView
+            android:id="@+id/trail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="مسار جبل الجرمق "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/trail_rating" />
+
+        <TextView
+            android:id="@+id/trail_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="الشمال 🌲"
+            app:layout_constraintEnd_toEndOf="@id/trail_name"
+            app:layout_constraintTop_toBottomOf="@id/trail_name" />
+
+        <TextView
+            android:id="@+id/trail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:drawableEnd="@drawable/baseline_access_time_24"
+            android:text="  5 س"
+            app:layout_constraintBottom_toBottomOf="@id/trail_region"
+            app:layout_constraintEnd_toStartOf="@id/trail_region"
+            app:layout_constraintTop_toTopOf="@id/trail_region" />
+
+        <TextView
+            android:id="@+id/trail_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:text="12كم 📍"
+            app:layout_constraintBottom_toBottomOf="@id/trail_time"
+            app:layout_constraintEnd_toStartOf="@id/trail_time"
+            app:layout_constraintTop_toTopOf="@id/trail_time" />
+
+        <ImageView
+            android:id="@+id/IsFamilyFriendly"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/images"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

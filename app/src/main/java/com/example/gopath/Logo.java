@@ -9,7 +9,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class logo extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseUser;
+
+public class Logo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +30,15 @@ public class logo extends AppCompatActivity {
         @Override
         public void run() {
             try {
-                Thread.sleep(5000);
-                Intent intent = new Intent(logo.this,signin.class);
-                startActivity(intent);
+                Thread.sleep(2000);
+                FirebaseUser user = FBRef.auth.getCurrentUser();
+                if(user!=null){
+                    Intent intent = new Intent(Logo.this, MainActivity.class);
+                    startActivity(intent);
+                }else {
+                    Intent intent = new Intent(Logo.this, SignIn.class);
+                    startActivity(intent);
+                }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
